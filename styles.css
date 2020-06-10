@@ -1,0 +1,179 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  /* background-color: #fdc646; */
+  background-image: url("https://cdn.pixabay.com/photo/2019/05/19/23/47/clouds-4215608_960_720.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gochi Hand", cursive;
+}
+* {
+  box-sizing: border-box;
+}
+.red-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* background-color: #ff414e; */
+  position: absolute;
+  background: linear-gradient(#ff414e, #fbdf59);
+  z-index: 0;
+}
+.screen-container {
+  width: 500px;
+  padding: 2rem;
+  /* background-color: #fbdf59; */
+  background-color: #ffffff80;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 0px 8px 3px #ffffff80;
+  -moz-box-shadow: 0px 0px 8px 3px #ffffff80;
+  box-shadow: 0px 0px 8px 3px #ffffff80;
+}
+.form {
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+input {
+  font-family: "Gochi Hand", cursive;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  padding-left: 5px;
+  width: 190px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  -webkit-box-shadow: 3px 3px 8px 1px #ffffff80;
+  -moz-box-shadow: 3px 3px 8px 1px #ffffff80;
+  box-shadow: 3px 3px 8px 1px #ffffff80;
+}
+.plus-icon {
+  cursor: pointer;
+  font-family: sans-serif;
+  background-color: #ff414e;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  right: -10px;
+  bottom: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input:focus {
+  outline: none;
+}
+.alert {
+  color: #ff414e;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+  width: 350px;
+  text-align: center;
+  z-index: 0;
+}
+.title-container {
+  /* background-color: #464646; */
+  color: rgb(61, 61, 61);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 400px;
+  height: 100px;
+  position: relative;
+}
+h1,
+h2 {
+  font-family: "Gochi Hand", cursive;
+}
+h1 {
+  margin: 0;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* main */
+
+.main {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  all: unset;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.pending,
+.finished {
+  font-family: "Loved by the King", cursive;
+  font-size: 25px;
+  color: #161616;
+}
+
+.pending-container,
+.finished-container {
+  text-align: center;
+  width: 190px;
+  -webkit-box-shadow: 3px 3px 8px 1px #ffffff80;
+  -moz-box-shadow: 3px 3px 8px 1px #ffffff80;
+  box-shadow: 3px 3px 8px 1px #ffffff80;
+  z-index: 1;
+}
+.pending-container,
+.finished-container {
+  background-color: #ffffffda;
+  border-radius: 10px;
+}
+/* todo and done title  */
+.todo-title-container,
+.done-title-container {
+  position: relative;
+}
+h2 {
+  color: #5a5858;
+}
+
+/* todolist */
+.pending li,
+.finished li {
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  padding-left: 10px;
+}
+li:hover {
+  background-color:#ffe59054;
+}
+li span {
+  position: absolute;
+  right: 0;
+}
+li::before {
+  content: "# ";
+}
